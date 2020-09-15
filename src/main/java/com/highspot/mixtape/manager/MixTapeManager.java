@@ -22,19 +22,19 @@ public class MixTapeManager implements Runnable {
   @CommandLine.Option(
       names = "--input-file",
       description = "filepath of a json file contains users, songs and playlist",
-      defaultValue = "/Volumes/unix/GitWorkplace/MixTapeAssignment/src/main/resources/mixtape.json")
+      defaultValue = "src/main/resources/mixtape.json")
   private File inputFile;
 
   @CommandLine.Option(
       names = "--changes-file",
       description = "filepath of a json file contains changes for the input json file.",
-      defaultValue = "/Volumes/unix/GitWorkplace/MixTapeAssignment/src/main/resources/changes.json")
+      defaultValue = "src/main/resources/changes.json")
   private File changesFile;
 
   @CommandLine.Option(
       names = "--output-file",
       description = "filepath for the output file after changes applied.",
-      defaultValue = "/Volumes/unix/GitWorkplace/MixTapeAssignment/src/main/resources/output.json")
+      defaultValue = "output.json")
   private File outputFile;
 
   public static void main(String[] args) {
