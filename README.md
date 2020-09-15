@@ -80,7 +80,7 @@ If you are in the the directory /MixTapeAssignment/ you can even directly run ./
 
 For the sole purpose of making the verification easy I have written all the result directly on the console itself.
 
-###Scalability Discussion
+### Scalability Discussion
 
 Currently we are able to read the complete mixtape.json  file into the memory and changes file as they are small
 but if they grow large we will have change our reading logic.
