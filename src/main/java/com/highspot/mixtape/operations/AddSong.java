@@ -2,15 +2,13 @@ package com.highspot.mixtape.operations;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeName;
-import com.highspot.mixtape.Exception.EntityAlreadyPresentException;
-import com.highspot.mixtape.Exception.EntityNotPresentException;
+import com.highspot.mixtape.datamodel.MixTapeRepository;
 import com.highspot.mixtape.datamodel.PlayList;
 import com.highspot.mixtape.datamodel.Song;
-import com.highspot.mixtape.datamodel.MixTapeRepository;
+import com.highspot.mixtape.exception.EntityAlreadyPresentException;
+import com.highspot.mixtape.exception.EntityNotPresentException;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-
-import java.util.List;
 
 /** This class is mainly responsible for adding the existing song to a existing playlist */
 @Data

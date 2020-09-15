@@ -2,11 +2,11 @@ package com.highspot.mixtape.operations;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeName;
-import com.highspot.mixtape.Exception.EntityAlreadyPresentException;
-import com.highspot.mixtape.Exception.EntityNotPresentException;
+import com.highspot.mixtape.datamodel.MixTapeRepository;
 import com.highspot.mixtape.datamodel.PlayList;
 import com.highspot.mixtape.datamodel.User;
-import com.highspot.mixtape.datamodel.MixTapeRepository;
+import com.highspot.mixtape.exception.EntityAlreadyPresentException;
+import com.highspot.mixtape.exception.EntityNotPresentException;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -41,7 +41,7 @@ public class CreatePlayList extends AbstractOperation {
     List<Integer> songsList = playlist.getSongIds();
 
     // check if the  songs list is not empty
-    if (songsList == null || songsList.size() <= 0) {
+    if (songsList.isEmpty()) {
       throw new EntityNotPresentException(String.format("%s: SongList not provided", getClass()));
     }
 

@@ -3,9 +3,9 @@ package com.highspot.mixtape.operations;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import com.highspot.mixtape.Exception.EntityAlreadyPresentException;
-import com.highspot.mixtape.Exception.EntityNotPresentException;
 import com.highspot.mixtape.datamodel.MixTapeRepository;
+import com.highspot.mixtape.exception.EntityAlreadyPresentException;
+import com.highspot.mixtape.exception.EntityNotPresentException;
 import lombok.Data;
 
 @JsonIgnoreProperties(ignoreUnknown = true)

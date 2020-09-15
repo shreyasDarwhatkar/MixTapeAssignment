@@ -2,9 +2,9 @@ package com.highspot.mixtape.operations;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeName;
-import com.highspot.mixtape.Exception.EntityNotPresentException;
-import com.highspot.mixtape.datamodel.PlayList;
 import com.highspot.mixtape.datamodel.MixTapeRepository;
+import com.highspot.mixtape.datamodel.PlayList;
+import com.highspot.mixtape.exception.EntityNotPresentException;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

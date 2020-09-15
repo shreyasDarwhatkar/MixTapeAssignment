@@ -1,9 +1,9 @@
 package com.highspot.mixtape.processors;
 
-import com.highspot.mixtape.Exception.EntityAlreadyPresentException;
-import com.highspot.mixtape.Exception.EntityNotPresentException;
 import com.highspot.mixtape.datamodel.MixTape;
 import com.highspot.mixtape.datamodel.MixTapeRepository;
+import com.highspot.mixtape.exception.EntityAlreadyPresentException;
+import com.highspot.mixtape.exception.EntityNotPresentException;
 import com.highspot.mixtape.operations.AbstractOperation;
 import com.highspot.mixtape.operations.OperationsList;
 import lombok.RequiredArgsConstructor;
